@@ -11,3 +11,10 @@ class main{
         System.out.println(s1.compareTo(s5));
     }
 }
+
+//Output
+0
+-5
+-1
+2
+
