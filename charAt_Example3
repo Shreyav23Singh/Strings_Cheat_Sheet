@@ -1,0 +1,59 @@
+//Print Characters at Odd Positions by Using the charAt() method
+class Main {
+  public static void main(String[] args) {
+    String str="If you want success Work Hard";
+    for(int i=0;i<str.length();i++){
+      if(i%2!=0){
+        System.out.println("Char at"+i+" place " +str.charAt(i));
+      }
+    }
+    
+   
+  }
+}
+//Output
+Char at1 place f
+Char at3 place y
+Char at5 place u
+Char at7 place w
+Char at9 place n
+Char at11 place  
+Char at13 place u
+Char at15 place c
+Char at17 place s
+Char at19 place  
+Char at21 place o
+Char at23 place k
+Char at25 place H
+Char at27 place r
+
+--------------------------------------------------------****************************----------------------------------------------------------------
+//Print Characters at Even Positions by Using the charAt() method
+class Main {
+  public static void main(String[] args) {
+    String str="If you want success Work Hard";
+    for(int i=0;i<str.length();i++){
+      if(i%2==0){
+        System.out.println("Char at"+i+" place " +str.charAt(i));
+      }
+    }
+    
+   
+  }
+}
+Output----
+Char at0 place I
+Char at2 place  
+Char at4 place o
+Char at6 place  
+Char at8 place a
+Char at10 place t
+Char at12 place s
+Char at14 place c
+Char at16 place e
+Char at18 place s
+Char at20 place W
+Char at22 place r
+Char at24 place  
+Char at26 place a
+Char at28 place d
