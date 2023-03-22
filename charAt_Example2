@@ -1,0 +1,19 @@
+//Accessing first and last character of string
+class Main {
+  public static void main(String[] args) {
+    String str="If you want success Work Hard";
+    int strlen=str.length();
+    System.out.println("Character at index 0 is :" +str.charAt(0));
+    System.out.println("Character at last index  is :" +str.charAt(strlen-1));
+    System.out.println(str.charAt(str.length() -2));
+    System.out.println(str.length() -2);
+   
+  }
+}
+
+//Output
+
+Character at index 0 is :I
+Character at last index  is :d
+r
+27
