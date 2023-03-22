@@ -1,0 +1,67 @@
+import java.util.ArrayList;
+
+//Count number of vowels in a string by using charAt() Method
+class Main {
+  ArrayList<Character> al;
+  Main(){ //Constructor 
+    al=new ArrayList<Character>();
+    al.add('A');
+    al.add('E');
+    al.add('I');
+    al.add('O');
+    al.add('U');
+    al.add('a');
+    al.add('e');
+    al.add('i');
+    al.add('o');
+    al.add('u');
+    
+    
+  }
+
+  private boolean isVowel(char c){
+    for(int i=0;i<al.size();i++){
+      if(c==al.get(i)){
+        return true;
+      }
+      
+      
+    }
+    return false;
+  }
+
+  //method to count vowels in the string
+  public int countVowels(String s){
+    int count_vowel=0;
+    int size=s.length();
+    for(int j=0;j<size;j++){
+      char c=s.charAt(j);
+      if(isVowel(c)){
+        count_vowel++;
+      }
+    }
+    return count_vowel;
+  }
+  
+
+  
+  public static void main(String[] args) {
+    Main obj=new Main();
+    String str="Java is a great language";
+    int noVowels=obj.countVowels(str);
+    System.out.println("String : "+str);
+    System.out.println(noVowels+" ");
+    str="one apple in a day keeps doctor away";
+    System.out.println("String :" +str);
+    noVowels=obj.countVowels(str);
+    System.out.println("Total no of vowels in the str : "+noVowels);
+    
+  }
+}
+
+** Output **
+String : Java is a great language
+10 
+String :one apple in a day keeps doctor away
+Total no of vowels in the str : 13
+ 
